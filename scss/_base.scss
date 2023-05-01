@@ -1,0 +1,59 @@
+.navbar-collapse{flex-grow:0;}
+
+main{
+    .banner{
+        background-image:url(../img/IMG_2922.jpeg);
+        height: 100vh; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-position-y:bottom;
+        background-repeat: no-repeat; /* Do not repeat the image */
+        box-shadow: 100px white;
+    
+        h1{
+            margin-top: 30vh;
+           color: white; 
+            text-shadow: 2px 2px 5px black;
+            font-weight:800;
+            font-size:10vh;
+        }
+        h2{
+            color:white;
+            text-shadow: 2px 2px 5px black;
+            font-weight:300;
+        }
+    }
+    .sucursales{
+        margin:2% 0px 0px;
+        div{margin-bottom: 2%;}
+        h2{color:$c_quinto;}
+    }
+    .servicio{
+        background-color:$c_principal;
+        margin:2% 0px;
+        padding:1%;
+    }
+    .items{
+        margin:2%;
+        h2{
+            margin: 1% 0% 2%;
+        }
+        span{color:$c_cuarto; font-weight: 800;}
+        i{color: $c_cuarto; }
+    }
+    .productos{
+        background-color:$c_secundario;
+        margin:2% 0px 0px;
+        padding:1%;
+
+    }
+}
+
+footer{
+    background-color: $c_quinto;
+    ul{list-style-type: none; margin-block-start: 0px;
+        li{display: inline; margin: 3px;
+        i{font-size: xx-large;}
+        }
+    }
+
+}

@@ -1,9 +1,3 @@
-.navbar-collapse{flex-grow:0;}
-.banner{
-    background-image:url(../img/one.JPG);
-    height: 1200px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    
+@import "variables";
+@import "base";
 
-}

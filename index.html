@@ -9,20 +9,20 @@
     <title>Kiosco Technology</title>
     <!--LINK CSS Y BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-secundario ">
+        <nav class="navbar fixed-top navbar-expand-lg bg_quinto">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="./img/icono.png" alt="Logo Kiosco Technology" width="50px">Kiosco Technology</a>
+              <a class="navbar-brand text-white" href="#"><img src="./img/icono.png" alt="Logo Kiosco Technology" width="50px">Kiosco Techno</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse btn-light" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Productos
                     </a>
                     <ul class="dropdown-menu">
@@ -31,32 +31,49 @@
                       <li><a class="dropdown-item" href="./pages/auriculares">Auriculares</a></li>
                       <li><a class="dropdown-item" href="./pages/computadoras">Para computadoras</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="./pages/productos">Todos los productos</a></li>
+                      <li><a class="dropdown-item" href="./pages/productos.html">Todos los productos</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">Servicios</a>
+                    <a class="nav-link text-white" href="./pages/servicios.html">Servicios</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">Contacto</a>
+                    <a class="nav-link text-white">Contacto</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
-    </header>
     <main>
-      <div class="row">
-          <div class="col-lg-12 col-12 d-flex justify-content-center">
-            <h1>Accesorios y reparaciones para tus dispositivos</h1>
+      <div class="row bg-black">
+          <div class="col-lg-12 banner d-flex justify-content-start align-items-center flex-column">
+            <h1>Kiosco Techno</h1>
+            <h2>Accesorios para celulares y servicio tecnico</h2>
           </div>
       </div>
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-8"> 
+
+      <div class="row sucursales d-flex justify-content-center">
+        <div class="col-lg-9 col-12">
           <div class="row">
-            <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
-              <h2>SERVICIO TECNICO</h2>
-              <p>Reparamos cualquier falla en celulares y tablets. <br> Nos especializamos en productos de Apple.</p>
+            <div class="col-lg-12 col-12">
+              <h2 class="text-center"><i class="bi bi-geo-alt"></i>SUCURSALES</h2>
+            </div>
+            <div class="col-lg-6 col-12 d-flex justify-content-center">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13132.559245514596!2d-58.4542249!3d-34.625907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb8d20d5a8eb%3A0x4256a75385b19388!2sKiosco%20Technology!5e0!3m2!1ses-419!2sar!4v1682565344115!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-6 col-12 d-flex justify-content-center">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1172.8579387134168!2d-58.46278469097923!3d-34.62865974288237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6b61e773bf%3A0x71afb6017153d6ad!2sKiosco%20Technology!5e0!3m2!1ses-419!2sar!4v1682565494735!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row servicio d-flex justify-content-center">
+        <div class="col-lg-8 col-12"> 
+          <div class="row">
+            <div class=" col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
+              <h2 class="text-white text-center">SERVICIO TECNICO</h2>
+              <p class="text-white text-center">Reparamos cualquier falla en celulares y tablets. <br> Nos especializamos en productos de Apple.</p>
               <button>Ver más</button>
             </div>
             <div class="col-lg-6 col-12 d-flex flex-column align-items-center">
@@ -65,55 +82,71 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-6 col-12">
-          <img src="#" alt="">
-        </div>
-        <div class="col-lg-6 col-12">
-          <h2>PRODUCTOS</h2>
-          <p>Tenemos todo lo que necesitas para personalizar tus dispositivos.</p>
-          <p>Auriculares, cargadores, cargadores portatiles, pendrives, memorias, etc</p>
-          <button>Ver más</button>
-        </div>
-      </div>
-      <div class="row">
+
+      <div class="row items">
         <div class="col-lg-12 col-12">
-          <h2 class="d-flex justify-content-center">SUCURSALES</h2>
-        </div>
-        <div class="col-lg-6 col-12">
-          mapita
-        </div>
-        <div class="col-lg-6 col-12">
-          mapita
+          <div class="row">
+            <h2 class="text-center">¿Por que elegir <span>Kiosco Techno</span>?</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-12 d-flex flex-column align-items-center">
+              <h2><i class="bi bi-gear"></i></h2>
+              <h3  class="text-center">Specialization:</h3>
+              <p  class="text-center"> Your company specializes in repairing iPhones, which means you have the expertise and knowledge to handle these devices with care and precision.</p>
+            </div>
+            <div class="col-lg-4 col-12 d-flex flex-column align-items-center">
+              <h2><i class="bi bi-person-check"></i></h2>
+                <h3  class="text-center">Quality and Convenience:</h3>
+                <p  class="text-center">Your company provides high-quality repairs with quick turnaround times, excellent customer service, and a convenient location for dropping off and picking up devices.</p>
+            </div>
+            <div class="col-lg-4 col-12 d-flex flex-column align-items-center">
+              <h2><i class="bi bi-bag"></i></h2>
+              <h3 class="text-center">Wide selection:</h3>
+              <p  class="text-center">Your company offers a wide selection of mobile phone accessories and competitive pricing, making it easy for customers to find what they need at a fair price.</p>
+            </div>
+          </div>
         </div>
       </div>
+    
+      <div class="row productos d-flex justify-content-center">
+        <div class="col-lg-8 col-12"> 
+          <div class="row">
+            <div class="col-lg-6 col-12 d-flex flex-column align-items-center">
+              <img src="./img/IMG_2880.JPG" alt="" width="400px;">
+            </div>
+            <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
+              <h2 class="text-white text-center">PRODUCTOS</h2>
+              <p class="text-white text-center">Tenemos todo lo que necesitas para personalizar tus dispositivos.<br>Auriculares, cargadores, cargadores portatiles, pendrives, memorias, etc</p>
+              <button>Ver más</button>
+            </div>
+          </div>
+        </div>      
+      </div>
+
     </main>
 
     <footer class="row">
-      <div class="col-lg-4 col-12">
-        <h3>CONTACTO</h3>
-        <ul>
-          <li>kioscotechnologysas@gmail.com</li>
-          <li>sucursal1</li>
-          <li>sucursal2</li>
-        </ul>
+      <div class="col-lg-12 col-12">
+        <div class="row">
+          <div class="col-lg-12 col-12 d-flex align-items-center justify-content-center">
+            <img src="./img/icono.png" alt="Icono Kiosco Technology" width="50px">
+            <h3 class="text-white">Kiosco Techno</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-12 d-flex justify-content-center">
+            <ul>
+              <li class="text-white"><i class="bi bi-instagram"></i></li>
+              <li class="text-white"><i class="bi bi-facebook"></i></li>
+              <li class="text-white"><i class="bi bi-whatsapp"></i></li>
+              <li class="text-white"><i class="bi bi-whatsapp"></i></li>
+              <li class="text-white"><i class="bi bi-envelope-at"></i></li>
+            </ul>
+            
+          </div>
+        </div>
+        
       </div>
-      <div class="col-lg-4 col-12">
-        <h3>REDES SOCIALES</h3>
-        <ul>
-          <li>icono @kiosco_techno</li>
-          <li>whatsapp sucursal1</li>
-          <li>whatsapp sucursal2</li>
-        </ul>
-      </div>
-      <div class="col-lg-4 col-12">
-        <h3>SUCURSALES</h3>
-        <ul>
-          <li>Rivadavia 6214, CABA</li>
-          <li>Rivadavia 6817, CABA</li>
-        </ul>
-      </div>
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
