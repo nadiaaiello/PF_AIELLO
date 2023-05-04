@@ -1,3 +1,7 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 .full-width {
   width: 100%;
 }
@@ -94,10 +98,18 @@
 .mainProductos {
   margin-top: 70px;
 }
+.mainProductos a {
+  text-decoration: none;
+}
 .mainProductos .titulo {
-  padding: 1%;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #857bb5;
+  color: white;
+  margin-top: 0px;
+  height: 150px;
+  font-size: xxx-large;
 }
 .mainProductos .categorias {
   margin-bottom: 2%;
@@ -113,7 +125,9 @@
   background-position: center; /* Center the image */
   background-position-y: bottom;
   background-repeat: no-repeat; /* Do not repeat the image */
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-shadow: 4px 1px 3px black;
 }
 .mainProductos .cables {
@@ -122,6 +136,10 @@
   background-position: center;
   background-size: 100%;
   height: 204px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 4px 1px 3px black;
 }
 .mainProductos .audio {
   background-image: url(../img/auriculares.jpg);
@@ -129,6 +147,21 @@
   height: 204px;
   background-position: center;
   background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 4px 1px 3px black;
+}
+.mainProductos .compu {
+  background-image: url(../img/keyboard.png);
+  background-repeat: no-repeat;
+  height: 204px;
+  background-position: center;
+  background-size: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 4px 1px 3px black;
 }
 .mainProductos .varios {
   background-image: url(../img/joystick.jpg);
@@ -136,6 +169,10 @@
   height: 204px;
   background-position: center;
   background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 4px 1px 3px black;
 }
 
 .mainServicios {
@@ -157,6 +194,39 @@
   padding: 3%;
 }
 
+.mainContacto {
+  margin-top: 73px;
+}
+.mainContacto .rrss {
+  background-color: #857bb5;
+  padding: 3%;
+  margin-bottom: 3%;
+}
+.mainContacto .rrss h1 {
+  font-size: xxx-large;
+  text-shadow: 2px 5px 9px black;
+}
+.mainContacto .rrss .iconos {
+  margin-bottom: 5%;
+}
+.mainContacto .rrss .iconos i {
+  font-size: xx-large;
+  margin: 0px 2%;
+  text-shadow: 2px 5px 9px black;
+}
+.mainContacto .rrss .sucursales div {
+  margin-bottom: 2%;
+}
+.mainContacto .rrss .instagram {
+  display: flex;
+  justify-content: center;
+}
+.mainContacto .formulario {
+  background-color: #2b2b70;
+  margin-bottom: 3%;
+  padding: 2%;
+}
+
 footer {
   background-color: #2E2D4D;
 }
@@ -170,6 +240,210 @@ footer ul li {
 }
 footer ul li i {
   font-size: xx-large;
+}
+
+body {
+  margin: 0px;
+}
+
+.gridFundas {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "nav" "titulo" "iphone" "samsung" "motorola" "footer";
+}
+.gridFundas nav {
+  grid-area: nav;
+}
+.gridFundas h1 {
+  grid-area: titulo;
+}
+.gridFundas .iphone {
+  grid-area: iphone;
+}
+.gridFundas .samsung {
+  grid-area: samsung;
+}
+.gridFundas .motorola {
+  grid-area: motorola;
+}
+.gridFundas footer {
+  grid-area: footer;
+}
+
+.gridCables {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "nav" "titulo" "todo" "footer";
+}
+.gridCables nav {
+  grid-area: nav;
+}
+.gridCables h1 {
+  grid-area: titulo;
+}
+.gridCables .todo {
+  grid-area: todo;
+}
+.gridCables footer {
+  grid-area: footer;
+}
+
+.gridAudio {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "nav" "titulo" "auriculares" "parlantes" "footer";
+}
+.gridAudio nav {
+  grid-area: nav;
+}
+.gridAudio h1 {
+  grid-area: titulo;
+}
+.gridAudio .auriculares {
+  grid-area: auriculares;
+}
+.gridAudio .parlantes {
+  grid-area: parlantes;
+}
+.gridAudio footer {
+  grid-area: footer;
+}
+
+.gridCompu {
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "nav" "titulo" "pendrives" "hardware" "footer";
+}
+.gridCompu nav {
+  grid-area: nav;
+}
+.gridCompu h1 {
+  grid-area: titulo;
+}
+.gridCompu .pendrives {
+  grid-area: pendrives;
+}
+.gridCompu .hardware {
+  grid-area: hardware;
+}
+.gridCompu footer {
+  grid-area: footer;
+}
+
+.gridFundas header, .gridAudio header, .gridCables header, .gridCompu header, .gridVarios header {
+  background-color: #2E2D4D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
+.gridFundas header div, .gridAudio header div, .gridCables header div, .gridCompu header div, .gridVarios header div {
+  display: flex;
+  align-items: center;
+}
+.gridFundas header div img, .gridAudio header div img, .gridCables header div img, .gridCompu header div img, .gridVarios header div img {
+  width: 50px;
+}
+.gridFundas header a, .gridAudio header a, .gridCables header a, .gridCompu header a, .gridVarios header a {
+  text-decoration: none;
+  color: white;
+}
+.gridFundas header a:hover, .gridAudio header a:hover, .gridCables header a:hover, .gridCompu header a:hover, .gridVarios header a:hover {
+  color: #857bb5;
+}
+.gridFundas header ul, .gridAudio header ul, .gridCables header ul, .gridCompu header ul, .gridVarios header ul {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .gridFundas header ul, .gridAudio header ul, .gridCables header ul, .gridCompu header ul, .gridVarios header ul {
+    flex-direction: column;
+  }
+}
+.gridFundas header ul li, .gridAudio header ul li, .gridCables header ul li, .gridCompu header ul li, .gridVarios header ul li {
+  list-style-type: none;
+  margin: 0px 5px;
+}
+.gridFundas main div, .gridAudio main div, .gridCables main div, .gridCompu main div, .gridVarios main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gridFundas main div .subtitulo, .gridAudio main div .subtitulo, .gridCables main div .subtitulo, .gridCompu main div .subtitulo, .gridVarios main div .subtitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gridFundas main div .subtitulo h2, .gridAudio main div .subtitulo h2, .gridCables main div .subtitulo h2, .gridCompu main div .subtitulo h2, .gridVarios main div .subtitulo h2 {
+  text-align: center;
+  background-color: #3E3E9A;
+  color: white;
+  box-shadow: 5px 5px 10px black;
+  padding: 5%;
+}
+.gridFundas main div .cards, .gridAudio main div .cards, .gridCables main div .cards, .gridCompu main div .cards, .gridVarios main div .cards {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+@media (max-width: 768px) {
+  .gridFundas main div .cards, .gridAudio main div .cards, .gridCables main div .cards, .gridCompu main div .cards, .gridVarios main div .cards {
+    grid-template-columns: 50% 50%;
+  }
+}
+.gridFundas main div .cards .card, .gridAudio main div .cards .card, .gridCables main div .cards .card, .gridCompu main div .cards .card, .gridVarios main div .cards .card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 10px black;
+  padding: 5%;
+  margin: 10%;
+  border-radius: 10%;
+}
+.gridFundas main div .cards .card img, .gridAudio main div .cards .card img, .gridCables main div .cards .card img, .gridCompu main div .cards .card img, .gridVarios main div .cards .card img {
+  width: 90%;
+  align-self: center;
+}
+.gridFundas main div .cards .card img:hover, .gridAudio main div .cards .card img:hover, .gridCables main div .cards .card img:hover, .gridCompu main div .cards .card img:hover, .gridVarios main div .cards .card img:hover {
+  transform: scale(1.2);
+  box-shadow: 3px 5px 10px black;
+}
+.gridFundas main .titulo, .gridAudio main .titulo, .gridCables main .titulo, .gridCompu main .titulo, .gridVarios main .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #857bb5;
+  color: white;
+  margin-top: 0px;
+  height: 150px;
+  font-size: xx-large;
+}
+.gridFundas footer, .gridAudio footer, .gridCables footer, .gridCompu footer, .gridVarios footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2E2D4D;
+}
+.gridFundas footer div, .gridAudio footer div, .gridCables footer div, .gridCompu footer div, .gridVarios footer div {
+  display: flex;
+  align-items: center;
+}
+.gridFundas footer div h3, .gridAudio footer div h3, .gridCables footer div h3, .gridCompu footer div h3, .gridVarios footer div h3 {
+  color: white;
+}
+.gridFundas footer div ul, .gridAudio footer div ul, .gridCables footer div ul, .gridCompu footer div ul, .gridVarios footer div ul {
+  list-style-type: none;
+  margin-block-start: 0px;
+}
+.gridFundas footer div ul li, .gridAudio footer div ul li, .gridCables footer div ul li, .gridCompu footer div ul li, .gridVarios footer div ul li {
+  display: inline;
+  margin: 3px;
+}
+.gridFundas footer div ul li i, .gridAudio footer div ul li i, .gridCables footer div ul li i, .gridCompu footer div ul li i, .gridVarios footer div ul li i {
+  font-size: xx-large;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,109 @@
+body{margin:0px;}
+.gridFundas{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    "nav"
+    "titulo"
+    "iphone"
+    "samsung"
+    "motorola"
+    "footer";
+    nav{grid-area: nav;}
+    h1{grid-area:titulo;}
+    .iphone{grid-area:iphone;}
+    .samsung{grid-area: samsung;}
+    .motorola{grid-area:motorola;}
+    footer{grid-area:footer;}
+}
+.gridCables{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "nav"
+    "titulo"
+    "todo"
+    "footer";
+    nav{grid-area: nav;}
+    h1{grid-area:titulo;}
+    .todo{grid-area:todo;}
+    footer{grid-area:footer;}
+}
+.gridAudio{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "nav"
+    "titulo"
+    "auriculares"
+    "parlantes"
+    "footer";
+    nav{grid-area: nav;}
+    h1{grid-area:titulo;}
+    .auriculares{grid-area:auriculares;}
+    .parlantes{grid-area:parlantes;}
+    footer{grid-area:footer;}}
+
+.gridCompu{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "nav"
+    "titulo"
+    "pendrives"
+    "hardware"
+    "footer";
+    nav{grid-area: nav;}
+    h1{grid-area:titulo;}
+    .pendrives{grid-area:pendrives;}
+    .hardware{grid-area:hardware;}
+    footer{grid-area:footer;}}
+
+
+//GENERAL//
+.gridFundas, .gridAudio, .gridCables, .gridCompu, .gridVarios{
+    header{
+    background-color: $c_quinto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:1%;
+        div{display: flex; align-items:center; img{width:50px;}}
+        a{text-decoration: none; color:white;
+        &:hover{color: $c_secundario;}}
+        ul{display: flex;
+            @media (max-width:768px) {
+                flex-direction: column;}  
+        li{list-style-type: none; margin:0px 5px;}}
+    }
+    main{
+        div{
+            display: flex; justify-content: center; align-items: center; flex-direction: column;
+            .subtitulo{ display: flex; justify-content: center; align-items: center;
+                h2{text-align: center; background-color: $c_cuarto; color:white; box-shadow: 5px 5px 10px black; padding: 5%;}}
+            .cards{
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25%;
+                @media (max-width:768px) {
+                    grid-template-columns: 50% 50%;   
+                }
+                .card{display: flex; flex-direction:column; box-shadow: 5px 5px 10px black; padding: 5%;margin:10%; border-radius: 10%;
+                img{width:90%; align-self:center;
+                &:hover{transform: scale(1.2); box-shadow:3px 5px 10px black;}}}}}
+        .titulo{display: flex; justify-content: center; align-items: center; background-color: $c_secundario; color:white; margin-top: 0px; height: 150px; font-size: xx-large;}        
+    }
+    footer{
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        background-color: $c_quinto;
+        div{display: flex; align-items: center;
+            h3{color:white;}
+            ul{list-style-type: none; margin-block-start: 0px;
+                li{display: inline; margin: 3px;
+                i{font-size: xx-large; color: white;}
+                }}
+            }
+    }
+}
