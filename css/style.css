@@ -271,22 +271,22 @@ body {
   grid-area: footer;
 }
 
-.gridCables {
+.gridCables, .gridVarios {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto;
   grid-template-areas: "nav" "titulo" "todo" "footer";
 }
-.gridCables nav {
+.gridCables nav, .gridVarios nav {
   grid-area: nav;
 }
-.gridCables h1 {
+.gridCables h1, .gridVarios h1 {
   grid-area: titulo;
 }
-.gridCables .todo {
+.gridCables .todo, .gridVarios .todo {
   grid-area: todo;
 }
-.gridCables footer {
+.gridCables footer, .gridVarios footer {
   grid-area: footer;
 }
 
